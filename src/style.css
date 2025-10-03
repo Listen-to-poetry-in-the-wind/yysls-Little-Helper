@@ -1,0 +1,13 @@
+* {
+  outline: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  backface-visibility: hidden;
+}
+
+#app {
+  position: absolute;
+  inset: 20px;
+}
+
