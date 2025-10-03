@@ -1,0 +1,62 @@
+/* 淡出淡入过渡  */
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 0.3s;
+}
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
+}
+/* 缩放过渡 meta: { transitionName: "scale",transitionMode: "out-in" } */
+.scale-enter-active,
+.scale-leave-active {
+	transition: all 0.1s ease-out;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+	opacity: 0;
+	transform: scale(0.9);
+}
+
+/* 平移过渡 meta: { transitionName: "slide" } */
+.slideLeft-enter-active,
+.slideLeft-leave-active,
+.slideRight-enter-active,
+.slideRight-leave-active {
+	position: absolute;
+	transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slideLeft-enter-to,
+.slideRight-leave-from {
+	right: 0;
+}
+
+.slideLeft-enter-from,
+.slideRight-leave-to {
+	opacity: 0.5;
+	right: -100%;
+}
+
+.slideLeft-leave-to,
+.slideRight-enter-from {
+	opacity: 0.5;
+	left: -100%;
+}
+
+.slideLeft-leave-from,
+.slideRight-enter-to {
+	left: 0;
+}
+
+.IF-Fade-enter-active,
+.IF-Fade-leave-active {
+	transition: all 0.25s ease;
+}
+
+.IF-Fade-enter-from,
+.IF-Fade-leave-to {
+	opacity: 0;
+	transform: translateY(-100%);
+}
